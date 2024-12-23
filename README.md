@@ -1,16 +1,70 @@
-## Hi there 👋
+<div align="center">
+  
+![Banner](./banner.svg)
 
-<!--
-**ChefJodlak/ChefJodlak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# > DIGITAL INNOVATOR_
 
-Here are some ideas to get you started:
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF00&center=true&vCenter=true&width=435&lines=Full+Stack+Developer;AI+Enthusiast;Web3+Explorer;Innovation+Architect)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+</div>
+
+## ⚡ Tech Arsenal
+
+```python
+class Developer:
+    def __init__(self):
+        self.name = "Rafał Jodełka"
+        self.role = "Digital Innovator"
+        self.stack = {
+            "languages": ["Python", "JavaScript", "TypeScript"],
+            "web": ["React", "Next.js", "Node.js"],
+            "web3": ["Solana", "Ethereum", "DeFi"],
+            "tools": ["Git", "Docker", "AWS"]
+        }
+    
+    def current_focus(self):
+        return "Building the bridge between Web3 and AI"
+```
+
+## 🚀 Skills & Technologies
+
+### Languages & Frameworks
+- **Frontend:** React.js, Next.js, TypeScript, TailwindCSS
+- **Backend:** Python, Node.js, Express
+- **Web3:** Solana, Ethereum
+
+### Tools & Platforms
+- **DevOps:** Git, Docker, AWS
+- **Databases:** PostgreSQL, MongoDB, Redis
+- **Tools:** Cursor, Figma
+
+## 🌟 Highlights
+
+- 🤖 **AI Development**: Crafting intelligent solutions
+- ⛓️ **Web3**: Building the decentralized future
+- 🚀 **Full Stack**: Creating seamless experiences
+- 🔮 **Innovation**: Pushing technological boundaries
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=YOUR_GITHUB_USERNAME&theme=midnight-purple&hide_border=true)](https://git.io/streak-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=midnight-purple&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
+
+</div>
+
+## 🌐 Connect with Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafa%C5%82-jode%C5%82ka-7a8713142/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/jodlak_)
+
+</div>
+
+---
+<div align="center">
+    <i>Let's build something extraordinary together</i> 🚀
+</div>
