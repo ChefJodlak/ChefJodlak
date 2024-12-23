@@ -45,14 +45,6 @@ class Developer:
 - 🚀 **Full Stack**: Creating seamless experiences
 - 🔮 **Innovation**: Pushing technological boundaries
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=YOUR_GITHUB_USERNAME&theme=midnight-purple&hide_border=true)](https://git.io/streak-stats)
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=midnight-purple&hide_border=true)](https://github.com/anuraghazra/github-readme-stats)
-
 </div>
 
 ## 🌐 Connect with Me
@@ -60,7 +52,7 @@ class Developer:
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rafa%C5%82-jode%C5%82ka-7a8713142/)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/jodlak_)
+[![X](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.com/jodlak_)
 
 </div>
 
