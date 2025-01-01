@@ -1,4 +1,4 @@
-iname: Update Repository Count
+name: Update Repository Count
 on:
   schedule:
     - cron: '0 0 * * *'
