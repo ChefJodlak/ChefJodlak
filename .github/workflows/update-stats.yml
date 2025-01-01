@@ -1,27 +1,29 @@
-name: Update Repository Count
+iname: Update Repository Count
 on:
- schedule:
-   - cron: '0 0 * * *'
- workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 permissions:
- contents: write
+  contents: write
 
 jobs:
- update-readme:
-   runs-on: ubuntu-latest
-   steps:
-     - uses: actions/checkout@v3
-     - name: Update README
-       run: |
-         TOKEN="${{ secrets.GH_TOKEN }}"
-         REPOS=$(curl -H "Authorization: Bearer $TOKEN" \
-                     -H "Accept: application/vnd.github.v3+json" \
-                     https://api.github.com/user | jq '.total_private_repos + .public_repos')
-         sed -i "s/Total%20Repos-[0-9]*-blue/Total%20Repos-$REPOS-blue/" README.md
-     - name: Commit changes
-       run: |
-         git config --local user.email "action@github.com"
-         git config --local user.name "GitHub Action"
-         git commit -am "Update repository count" || exit 0
-         git push
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update README
+        run: |
+          TOKEN="${{ secrets.GH_TOKEN }}"
+          PRIVATE_COUNT=$(curl -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github.v3+json" \
+                         https://api.github.com/search/repositories?q=user:ChefJodlak+is:private | jq '.total_count')
+          PUBLIC_COUNT=$(curl -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.github.v3+json" \
+                        https://api.github.com/users/ChefJodlak | jq '.public_repos')
+          TOTAL=$((PRIVATE_COUNT + PUBLIC_COUNT))
+          sed -i "s/Total%20Repos-[0-9]*-blue/Total%20Repos-$TOTAL-blue/" README.md
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -am "Update repository count" || exit 0
+          git push
