@@ -15,10 +15,10 @@ jobs:
       - name: Update README
         run: |
           TOKEN="${{ secrets.GH_TOKEN }}"
-          REPOS=$(curl -H "Authorization: token $TOKEN" \
-                      -H "Accept: application/vnd.github.v3+json" \
-                      https://api.github.com/user | jq '.total_private_repos + .public_repos')
-          sed -i "s/Total%20Repos-[0-9]*-blue/Total%20Repos-$REPOS-blue/" README.md
+	  REPOS=$(curl -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              https://api.github.com/user | jq '.total_private_repos + .public_repos')          
+	  sed -i "s/Total%20Repos-[0-9]*-blue/Total%20Repos-$REPOS-blue/" README.md
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
