@@ -11,7 +11,7 @@
 ## 📊 GitHub Stats
 <div align="center">
 
-[![Total Repositories](https://custom-icon-badges.demolab.com/badge/Total%20Repos-142-blue?style=for-the-badge&logo=repo)](https://github.com/ChefJodlak:?tab=repositories)
+[![Total Repositories](https://custom-icon-badges.demolab.com/badge/Total%20Repos-143-blue?style=for-the-badge&logo=repo)](https://github.com/ChefJodlak:?tab=repositories)
 
 </div>
 
